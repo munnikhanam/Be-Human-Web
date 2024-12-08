@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- tailwind and daisy ui cdn link -->
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- header-part-started -->
+    <header>
+      <nav>
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+              >
+                <li>
+                  <a href="">
+                    <img src="./assets/logo.png" alt="" />
+                    <span>Be-Human</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <a class="btn bg-[#B4F461] text-xl">Blog</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <a href="">
+                  <img src="./assets/logo.png" alt="" />
+                  <span>Be-Human</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn">
+              <img src="./assets/coin.png" alt="" />
+              <span id="total-donation">5000 </span>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="flex justify-center items-center">
+        <button
+          id="donation-btn"
+          class="px-5 py-2 rounded-box border-solid border-1 border-gray-400 bg-[#B4F461] m-10"
+        >
+          Donation
+        </button>
+        <button
+          id="history-btn"
+          class="px-5 py-2 rounded-box border-solid border-1 border-gray-400"
+        >
+          History
+        </button>
+      </div>
+    </header>
+    <!-- header-part-ended -->
+    <main>
+      <div id="card-part">
+        <div class="card lg:flex-row shadow-xl sm:flex-col">
+          <figure class="lg:w-1/2 sm:w-full">
+            <img class="w-full" src="./assets/feni.png" alt="Movie" />
+          </figure>
+          <div class="card-body lg:w-1/2 sm:w-full">
+            <div class="">
+              <a class="btn">
+                <img src="./assets/coin.png" alt="" />
+                <p id="donate-tk">0</p>
+              </a>
+            </div>
+            <h2 class="card-title my-2">
+              Donate for Flood at Noakhali, Bangladesh
+            </h2>
+            <p>
+              The recent floods in Noakhali have caused significant damage to
+              homes infrastructure. Your donation will help provide essential
+              supplies and to those affected by this disaster. Every
+              contribution, big or small, makes difference. Please join us in
+              supporting the relief efforts and making a positive impact on the
+              lives of those in need.
+            </p>
+            <div class="justify-center my-2">
+              <div>
+                <input
+                  id="donation-input"
+                  type="text"
+                  placeholder="Write Donation Amount"
+                  class="input input-bordered w-full max-w-xs my-2"
+                />
+              </div>
+              <div
+                class="bg-[#B4F461] text-center rounded-box border-solid border-1 border-gray-400 text-1xl bold py-4"
+              >
+                <button id="add-donation-btn">Donate Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="./script/script.js"></script>
+  </body>
+</html>
