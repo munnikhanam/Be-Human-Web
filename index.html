@@ -21,7 +21,7 @@
   <body class="font-[lexend]">
     <!-- header-part-started -->
     <header>
-      <nav class="fixed w-full top-0 left-0">
+      <nav class="stiky ">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <div class="dropdown">
@@ -74,7 +74,13 @@
           </div>
         </div>
       </nav>
-      <div class="flex justify-center items-center">
+     <section id="accordian-container"></section>
+      
+    </header>
+   
+    <!-- header-part-ended -->
+    <main id="main-part">
+      <div class="flex justify-center items-center border-b-2 border-gray-500 ">
         <button
           id="donation-btn"
           class="px-5 py-2 rounded-box border-solid border-1 border-gray-400 bg-[#B4F461] m-10"
@@ -88,11 +94,6 @@
           History
         </button>
       </div>
-      <section id="accordian-container" class="hidden"></section>
-    </header>
-   
-    <!-- header-part-ended -->
-    <main>
       <div id="card-part" >
         <!-- ========card-1===== -->
        <section class="my-6">
@@ -218,8 +219,9 @@
    
     </main>
     <footer></footer>
-    <script src="./script/utility.js"></script>
+    
     <script src="./script/card2.js"></script>
+    <script src="./script/utility.js"></script>
     <script src="./script/script.js"></script>
   </body>
 </html>

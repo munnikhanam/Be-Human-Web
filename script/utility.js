@@ -41,6 +41,6 @@ blog.addEventListener("click", function () {
   const container = document.getElementById("accordian-container");
   container.appendChild(blogItem);
   container.classList.remove("hidden");
-  const card = getInnertextFieldById("card-part");
+  const card = getInnertextFieldById("main-part");
   card.classList.add("hidden");
 });
