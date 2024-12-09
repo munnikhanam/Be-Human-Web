@@ -90,7 +90,9 @@
     </header>
     <!-- header-part-ended -->
     <main>
-      <div id="card-part">
+      <div id="card-part" >
+        <!-- ========card-1===== -->
+       <section class="my-6">
         <div class="card lg:flex-row shadow-xl sm:flex-col">
           <figure class="lg:w-1/2 sm:w-full">
             <img class="w-full" src="./assets/feni.png" alt="Movie" />
@@ -131,30 +133,90 @@
                 </button>
               </div>
             </div>
+         
           </div>
+        
+       </section>
+         
+        <!-- ====card-2 -->
+        <section class="my-6">
+          <div id="quota-protest ">
+            <div class="card lg:flex-row shadow-xl sm:flex-col">
+              <figure class="lg:w-1/2 sm:w-full">
+                <img class="w-full" src="./assets/quota-protest.png" alt="Movie" />
+              </figure>
+              <div class="card-body lg:w-1/2 sm:w-full">
+                <div class="">
+                  <a class="btn">
+                    <img src="./assets/coin.png" alt="" />
+                    <p id="quota-donate-tk">0</p>
+                  </a>
+                </div>
+                <h2 id="Quota" class="card-title my-2">
+                  Aid for Injured in the Quota Movement
+                </h2>
+                <p>
+                  The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+                </p>
+                <div class="justify-center my-2">
+                  <div>
+                    <input
+                      id="quota-protest-input"
+                      type="text"
+                      placeholder="Write Donation Amount"
+                      class="input input-bordered w-full max-w-xs my-2"
+                    />
+                  </div>
+                  <div></div>
+                    <button
+                      id="quota-protest-donation-btn"
+                      class="bg-[#B4F461] text-center rounded-box border-solid border-1 border-gray-400 text-1xl bold py-4 px-8"
+                    >
+                      Donate Now
+                    </button>
+                  </div>
+                </div>
+              </div>
+           </div>
+           
+         </section>
         </div>
-        <!-- modal box -->
-        <div
-          id="modal"
-          class="hidden w-full flex justify-center items-center my-[-20px]"
-        >
-          <!-- Open the modal using ID.showModal() method -->
+       
+        <!-- === -->
+       
+                    <!-- modal box -->
+                    <div
+                    id="modal"
+                    class="hidden w-full flex justify-center items-center my-[-400px] mx-[-50px]"
+                  >
+                    <!-- Open the modal using ID.showModal() method -->
+            
+                    <div class="modal-box">
+                      <h3 class="text-lg font-bold">Congratulation!!! </h3>
+                      <p class="py-4">You have a great heart!! Thank You</p>
+                      <div class="modal-action"></div>
+                    </div>
+                  </div>
+                </div>
+            
+                <!-- history -->
+                <section id="history-part" class="hidden flex justify-center items-center">
+                  
+                  <div class="history-card">
+                   
+                  </div>
+                  <div id="quota-history" >
 
-          <div class="modal-box">
-            <h3 class="text-lg font-bold">Congratulation!!! Received Donation</h3>
-            <p class="py-4">You have a great heart!!</p>
-            <div class="modal-action"></div>
-          </div>
-        </div>
-      </div>
-
-      <!-- history -->
-      <section id="history-part" class="hidden">
-        <div class="history-card"></div>
-      </section>
+                  </div>
+                </section>
+      
+ 
+     
+   
     </main>
     <footer></footer>
     <script src="./script/utility.js"></script>
+    <script src="./script/card2.js"></script>
     <script src="./script/script.js"></script>
   </body>
 </html>
