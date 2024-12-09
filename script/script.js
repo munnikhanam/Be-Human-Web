@@ -44,6 +44,8 @@ historyBtn.addEventListener("click", function () {
   mainCard.classList.add("hidden");
   const historyCard = document.getElementById("history-part");
   historyCard.classList.remove("hidden");
+  const modal = document.getElementById("modal");
+  modal.classList.add("hidden");
 });
 donationBtn.addEventListener("click", function () {
   donationBtn.classList.add("bg-[#B4F461]");
@@ -51,4 +53,8 @@ donationBtn.addEventListener("click", function () {
   historyBtn.classList.remove("bg-[#B4F461]");
   const mainCard = getInnertextFieldById("card-part");
   mainCard.classList.remove("hidden");
+  const historyCard = document.getElementById("history-part");
+  historyCard.classList.add("hidden");
+  const modal = document.getElementById("modal");
+  modal.classList.remove("hidden");
 });
