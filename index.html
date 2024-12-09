@@ -97,7 +97,7 @@
                 <p id="donate-tk">0</p>
               </a>
             </div>
-            <h2 class="card-title my-2">
+            <h2 id="place" class="card-title my-2">
               Donate for Flood at Noakhali, Bangladesh
             </h2>
             <p>
@@ -117,17 +117,39 @@
                   class="input input-bordered w-full max-w-xs my-2"
                 />
               </div>
-              <div
-                class="bg-[#B4F461] text-center rounded-box border-solid border-1 border-gray-400 text-1xl bold py-4"
-              >
-                <button id="add-donation-btn">Donate Now</button>
+              <div></div>
+                <button
+                  id="add-donation-btn"
+                  class="bg-[#B4F461] text-center rounded-box border-solid border-1 border-gray-400 text-1xl bold py-4 px-8"
+                >
+                  Donate Now
+                </button>
               </div>
             </div>
           </div>
         </div>
+        <!-- modal box -->
+        <div
+          id="modal"
+          class="hidden w-full flex justify-center items-center my-[-20px]"
+        >
+          <!-- Open the modal using ID.showModal() method -->
+
+          <div class="modal-box">
+            <h3 class="text-lg font-bold">Congratulation!!!</h3>
+            <p class="py-4">You have a great heart!!</p>
+            <div class="modal-action"></div>
+          </div>
+        </div>
       </div>
+
+      <!-- history -->
+      <section id="history-part" class="hidden">
+        <div class="history-card"></div>
+      </section>
     </main>
     <footer></footer>
+    <script src="./script/utility.js"></script>
     <script src="./script/script.js"></script>
   </body>
 </html>
